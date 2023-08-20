@@ -26,22 +26,21 @@ function App() {
 function header() {
   return (
     <div className="header">
-    <div class="left-section">
+    <div className="left-section">
       <a href="https://www.prime-n-salon.com/" target="_blank">
-        <img class="primen-logo" src="logos/primen-logo.webp" alt="primen-logo"></img>
+        <img className="primen-logo" src="logos/primen-logo.webp" alt="primen-logo"></img>
       </a>
     </div>
-    <div class="middle-section">
-      <input class="search-input" type="text" placeholder="キーワードを入力">
-      <button class="search-btn">
-        <img class="search-icon" src="icons/search.png"></img>
-        <div class="tooltip">検索する</div>
+    <div className="middle-section">
+      <input className="search-input" type="text" placeholder="キーワードを入力" />
+      <button className="search-btn">
+        <img className="search-icon" src="icons/search.png"></img>
+        <div className="tooltip">検索する</div>
       </button>
-      </input>
     </div>
-    <div class="right-section">
-      <div class="toggle-section">
-        <div class="toggle-btn">
+    <div className="right-section">
+      <div className="toggle-section">
+        <div className="toggle-btn">
           <span></span>
           <span></span>
           <span></span>
