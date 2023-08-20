@@ -1,0 +1,186 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  height: 60px;
+  width: 100%;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+  border-bottom: 1px solid rgb(3, 3, 156, 0.30);
+}
+
+
+/* -----------------------LEFT section----------------------- */
+.left-section {
+  align-items: center;
+  width: 220px;
+  padding-right: 0px;
+}
+
+.primen-logo{
+  height: 30px;
+  margin: 0px 25px 0px 30px;
+  padding: 10px;
+}
+
+.primen-logo:hover {
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+/* -----------------------MIDDOLE section----------------------- */
+.middle-section {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 0px;
+  margin-right: 35px;
+  max-width: 500px;
+}
+
+@media screen and (max-width: 800px) {
+  .middle-section {
+    display: none;
+  }
+}
+
+
+.search-input {
+  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.15);
+  border: 1.5px solid rgb(237, 237, 237);
+  border-radius: 2px;
+  height: 38px;
+  padding: 4px 0px 4px 8px;
+  cursor: pointer;
+  outline: none;
+  flex: 1;
+  width: 0;
+  font-size: 20px;
+}
+
+.search-input::placeholder {
+  font-size: 16px;
+}
+
+.search-input:hover {
+  border:  1px solid rgb(3, 3, 156, 0.50);
+}
+
+.search-input:focus {
+  border:  2px solid rgb(3, 3, 156, 0.8);
+}
+
+.search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  padding: 6px;
+  border: 1px solid rgb(237, 237, 237);
+  border-radius: 2px;
+  transition: 0.15s;
+  left: 7px;
+}
+
+.search-icon{
+  height: 35px;
+  width: 35px;
+  padding: 7px;
+  border-radius: 2px;
+  background-color:  rgb(237, 237, 237);
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+.search-icon:hover {
+  background-color:  rgb(189, 189, 189);
+}
+
+.search-btn:active, 
+.search-icon:active {
+  background-color:  rgb(221, 220, 220);
+}
+
+.search-btn .tooltip {
+  position: absolute;
+  background-color: rgb(189, 189, 189);
+  padding: 4px 8px;
+  bottom: -35px;
+  border-radius: 2px;
+  font-size: 12px;
+  transition: 0.15s;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-btn:hover .tooltip {
+  opacity: 1;
+}
+
+
+
+/* -----------------------RIGHT section----------------------- */
+.right-section {
+  display: inline-block;
+  justify-content: center;
+  top: 0px;
+  right: 0px;
+  height: 60px;
+  padding: 0px 30px 0px 30px;
+}
+
+
+.toggle-btn {
+  display: block;
+  position: relative;
+  top: 20px;
+  right: -100px;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background-color: rgb(242, 240, 240);
+  transition: all 0.15s;
+}
+
+.toggle-btn span {
+  display: block;
+  height: 3px;
+  background-color: rgb(3, 3, 156, 0.7);
+  transition: all 0.5s;
+  border-radius: 4px;
+}
+
+.toggle-btn span:nth-child(1) {
+  top: 10px;
+}
+.toggle-btn span:nth-child(2) {
+  margin: 8px 0px;
+}
+.toggle-btn span:nth-child(3) {
+  bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .toggle-btn {
+    right: 0px;
+  }
+
+  .toggle-btn span {
+    right: 0px;
+  }
+}
+
+
+
+
+
