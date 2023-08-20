@@ -8,6 +8,10 @@ import './styles/sidebar.css';
 import './styles/sign-up.css';
 
 function App() {
+  render(<header />);
+  render(<sidebar />);
+  render(<main_contents />);
+  render(<mwrapper />);
   return (
     <div className="App">
       <header className="App-header">
@@ -22,7 +26,6 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React !!!
-        
         </a>
       </header>
     </div>
@@ -152,12 +155,8 @@ function mwrapper() {
   );
 }
 
-// export default App;
+export default App;
 // export default header;
 // export default sidebar;
 // export default main_contents;
 // export default mwrapper;
-render(<header />);
-render(<sidebar />);
-render(<main_contents />);
-render(<mwrapper />);
