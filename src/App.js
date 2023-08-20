@@ -1,5 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import './styles/footer.css';
+import './styles/general.css';
+import './styles/header.css';
+import './styles/main.css';
+import './styles/sidebar.css';
+import './styles/sign-up.css';
 
 function App() {
   return (
