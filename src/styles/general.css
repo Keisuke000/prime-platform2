@@ -1,0 +1,16 @@
+body{
+  position: relative;
+  margin: 0px;
+  background-color: rgb(247, 246, 246);
+  font-family: Roboto, Arial;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}

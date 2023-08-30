@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './header';
+import Sidebar from './sidebar';
+import Main_contents from './main_contents';
+import React from 'react';
+import Mwrapper from './mwrapper';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  const subject = "React dayo"
+  console.log(subject);
+  return (    
+    <body>
+      <div><Header /></div>
+      <div><Sidebar /></div>
+      <div><Main_contents /></div>
+      <div><Mwrapper /></div>
+    </body>
   );
 }
 
 export default App;
+

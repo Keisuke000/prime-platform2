@@ -1,0 +1,103 @@
+.contents {
+  padding: 75px 30px 30px 230px;
+  transition: all 0.5s;
+  overflow: scroll;
+}
+
+@media screen and (max-width: 800px) {
+  .contents {
+    padding: 75px 30px 30px 30px;
+    transition: all 0.5s;
+  }
+
+  .open .contents{
+    padding:75px 30px 30px 230px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  #mask {
+    display: none;
+    transition: all 0.5s;
+  }
+
+  .open #mask {
+    display: block;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: sticky;
+    opacity: 0.7;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+}
+
+
+.test-ss {
+  width: 800px;
+  height: 800px;
+  border: 1px solid gray;
+}
+
+
+/* ---------todo---------  */
+.todo-manager {
+  font-size: 20px;
+}
+
+.todo-input {
+  border-bottom: 1px solid  rgb(3, 3, 156);
+  padding-bottom: 30px;
+}
+
+.input-task-button {
+  display: flex;
+  width: 300px;
+  height: 38px;
+}
+
+.input-task-button::placeholder{
+  font-size: 20px;
+}
+
+.input-date-button {
+  display: flex;
+  width: 300px;
+  height: 38px;
+}
+
+.input-date-button::-webkit-datetime-edit{
+  font-size: 20px;
+}
+
+.input-date-button::-webkit-calendar-picker-indicator{
+  width: 20px;
+}
+
+.add-task-button {
+  display: flex;
+  font-size: 20px;
+}
+
+.table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+ }
+ .table th {
+  padding: 10px;
+  background: #e9faf9;
+  border: solid 1px #778ca3;
+ }
+ .table td {
+  padding: 10px;
+  border: solid 1px #778ca3;
+ }
+
+
