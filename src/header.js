@@ -31,46 +31,6 @@ class Header extends React.Component {
   }
 }
 
-// class header extends React.Component {
-//   render() {
-//     return (
-//       <div className='header'>
-//         <div className='header-logo'>
-//           <img src='https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/character_logo.svg' />
-//         </div>
-//       </div>
-//     );
-//   }
-// }
-
-// function header() {
-//   return (
-//     <div className="header">
-//       <div className="left-section">
-//         <a href="https://www.prime-n-salon.com/" target="_blank">
-//           <img className="primen-logo" src="logos/primen-logo.webp" alt="primen-logo"></img>
-//         </a>
-//       </div>
-//       <div className="middle-section">
-//         <input className="search-input" type="text" placeholder="キーワードを入力" />
-//         <button className="search-btn">
-//           <img className="search-icon" src="icons/search.png"></img>
-//           <div className="tooltip">検索する</div>
-//         </button>
-//       </div>
-//       <div className="right-section">
-//         <div className="toggle-section">
-//           <div className="toggle-btn">
-//             <span></span>
-//             <span></span>
-//             <span></span>
-//           </div>
-//         </div>
-//       </div>
-//     </div>      
-//   );
-// }
-
 
 export default Header;
 
